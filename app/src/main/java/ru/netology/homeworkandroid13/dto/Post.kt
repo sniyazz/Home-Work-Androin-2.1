@@ -8,8 +8,8 @@ data class Post (
     val published: String,
     val content: String,
     var likedByMe: Boolean,
-    var likes: Int,
-    var share: Int
+    val likes: Int,
+    val share: Int
 )
 
 object CountService {
