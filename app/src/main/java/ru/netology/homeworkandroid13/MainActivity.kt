@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //binding.root.setOnClickListener { println("root") }
 
         binding.root.setOnClickListener { println("root") }
         binding.imageViewNonLike.setOnClickListener { println("root") }
