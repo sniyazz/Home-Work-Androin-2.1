@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.root.setOnClickListener { println("root") }
-        binding.imageViewNonLike.setOnClickListener { println("root") }
+        binding.imageViewNonLike.setOnClickListener { println("like") }
 
         val post = Post(
             id = 1,
