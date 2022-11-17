@@ -2,8 +2,11 @@ package ru.netology.homeworkandroid13
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.viewbinding.ViewBinding
+import androidx.viewbinding.ViewBindings
 import ru.netology.homeworkandroid13.databinding.ActivityMainBinding
 import ru.netology.homeworkandroid13.dto.CountService
 import ru.netology.homeworkandroid13.dto.Post
@@ -13,6 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //binding.root.setOnClickListener { println("root") }
+
+        binding.root.setOnClickListener { println("root") }
+        binding.imageViewNonLike.setOnClickListener { println("root") }
 
         val post = Post(
             id = 1,
