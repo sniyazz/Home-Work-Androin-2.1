@@ -17,8 +17,15 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.root.setOnClickListener { println("root") }
-        binding.imageViewNonLike.setOnClickListener { println("like") }
+        binding.root.setOnClickListener {
+            println("root")
+        }
+        binding.imageViewNonLike.setOnClickListener {
+            println("like")
+        }
+        binding.imageViewAvatar.setOnClickListener {
+            println("avatar")
+        }
 
         val post = Post(
             id = 1,
@@ -30,11 +37,11 @@ class MainActivity : AppCompatActivity() {
             share = 999
         )
 
-        with(binding){
+        with(binding) {
             textViewHeader.text = post.autor
             textViewPublishDate.text = post.published
             textViewPostText.text = post.content
-            if (post.likedByMe){
+            if (post.likedByMe) {
                 binding.imageViewNonLike.setImageResource(R.drawable.like_red)
             }
             textViewLikeCount.text = CountService.countServise(post.likes)
