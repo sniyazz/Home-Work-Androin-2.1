@@ -8,13 +8,13 @@ data class Post (
     val published: String,
     val content: String,
     var likedByMe: Boolean,
-    val likes: Int,
+    var likes: Int,
     val share: Int
 )
 
 object CountService {
     fun countServise (count: Int): String {
-        var x = when(count){
+        val x = when(count){
             in 0..999 -> count.toString()
             in 1000..1099 -> "1K"
             in 1100..9999 -> when(count % 100){

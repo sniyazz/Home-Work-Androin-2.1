@@ -6,4 +6,5 @@ import ru.netology.homeworkandroid13.dto.Post
 interface PostRepository {
     fun get(): LiveData<Post>
     fun like()
+    fun share()
 }
