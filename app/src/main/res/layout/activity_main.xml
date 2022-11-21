@@ -136,7 +136,7 @@
         android:textSize="16sp"
         app:layout_constraintRight_toRightOf="@id/textViewPostText"
         app:layout_constraintTop_toBottomOf="@id/horisonlalBarrierSecond"
-         />
+        />
 
     <ImageView
         android:id="@+id/imageViewViewEueIcon"
