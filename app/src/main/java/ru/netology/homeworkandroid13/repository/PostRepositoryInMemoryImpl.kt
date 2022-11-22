@@ -21,8 +21,8 @@ class PostRepositoryInMemoryImpl : PostRepository {
     override fun like() {
         post = post.copy(likedByMe = !post.likedByMe)
         if (post.likedByMe) {
-            post = post.copy(likes = post.likes + 1000)
-        }else post = post.copy(likes = post.likes - 1000)
+            post = post.copy(likes = post.likes + 1)
+        }else post = post.copy(likes = post.likes - 1)
 
         //post = post.copy(likedByMe = post.likedByMe)
         //if(!post.likedByMe) post = post.copy(likes = post.likes - 1)
